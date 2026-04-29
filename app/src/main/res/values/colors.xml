@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="deepseek_primary">#4F46E5</color>
+    <color name="deepseek_primary_container">#E0E7FF</color>
+    <color name="deepseek_secondary">#7C3AED</color>
+    <color name="deepseek_surface">#FAFAFA</color>
+    <color name="deepseek_background">#FFFFFF</color>
+    <color name="user_bubble">#4F46E5</color>
+    <color name="assistant_bubble">#F3F4F6</color>
+</resources>

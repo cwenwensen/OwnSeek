@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DeepSeek Chat</string>
+    <string name="chat_title">DeepSeek Chat</string>
+    <string name="settings_title">调试设置</string>
+    <string name="send">发送</string>
+    <string name="stop">停止</string>
+    <string name="clear_conversation">清空对话</string>
+    <string name="clear_confirm_title">确认清空</string>
+    <string name="clear_confirm_message">确定要清空所有对话记录吗？此操作不可撤销。</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="api_key_label">API 密钥</string>
+    <string name="api_key_hint">输入你的 DeepSeek API 密钥</string>
+    <string name="api_key_required">需要有效的 API 密钥才能发送请求</string>
+    <string name="model_label">模型</string>
+    <string name="temperature_label">Temperature</string>
+    <string name="temperature_desc">控制回复的随机性。值越高越有创意，值越低越严谨。</string>
+    <string name="top_p_label">Top P</string>
+    <string name="top_p_desc">词汇选择的核采样范围。与 Temperature 配合使用。</string>
+    <string name="max_tokens_label">最大 Tokens</string>
+    <string name="max_tokens_desc">限制回复的最大长度。1 个 token 约等于 1 个中文字或 0.75 个英文单词。</string>
+    <string name="presence_penalty_label">话题重复惩罚</string>
+    <string name="presence_penalty_desc">正数鼓励模型谈论新话题，负数允许重复。</string>
+    <string name="frequency_penalty_label">词汇重复惩罚</string>
+    <string name="frequency_penalty_desc">正数减少词汇重复，负数允许更多重复。</string>
+    <string name="seed_label">随机种子 (可选)</string>
+    <string name="seed_desc">设置后，相同种子 + 相同输入会产生相同输出。</string>
+    <string name="thinking_mode_label">思考模式</string>
+    <string name="thinking_mode_desc">思考模式会消耗更多 token，但在数学和代码任务上更准确。</string>
+    <string name="stream_label">流式输出</string>
+    <string name="stream_desc">开启后 AI 回复会逐字显示，关闭后等待完整回复一次性显示。</string>
+    <string name="response_format_label">回复格式</string>
+    <string name="section_generation">生成参数</string>
+    <string name="section_advanced">高级选项</string>
+    <string name="reset_defaults">恢复默认设置</string>
+    <string name="input_hint">输入消息...</string>
+    <string name="empty_chat_hint">DeepSeek V4 Pro\n有问题随时问我</string>
+    <string name="error_network">网络连接失败，请检查网络</string>
+    <string name="error_api_key">请先在设置中配置 API 密钥</string>
+    <string name="error_timeout">请求超时，请稍后重试</string>
+    <string name="you">你</string>
+    <string name="assistant">DeepSeek</string>
+</resources>
