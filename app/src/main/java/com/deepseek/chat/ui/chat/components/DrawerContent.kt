@@ -31,7 +31,7 @@ fun DrawerContent(
 
         // 标题
         Text(
-            text = "DeepSeek Chat",
+            text = "OwnSeek",
             style = MaterialTheme.typography.headlineSmall,
             fontWeight = FontWeight.Bold,
             color = MaterialTheme.colorScheme.primary,

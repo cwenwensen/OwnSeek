@@ -5,14 +5,14 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import com.deepseek.chat.ui.navigation.AppNavHost
-import com.deepseek.chat.ui.theme.DeepSeekChatTheme
+import com.deepseek.chat.ui.theme.OwnSeekTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            DeepSeekChatTheme {
+            OwnSeekTheme {
                 AppNavHost()
             }
         }

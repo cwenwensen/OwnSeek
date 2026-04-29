@@ -30,5 +30,5 @@ data class ChatUiState(
         get() = conversations.sortedByDescending { it.updatedAt }
 
     val displayTitle: String
-        get() = currentConversation?.title ?: "DeepSeek Chat"
+        get() = currentConversation?.title ?: "OwnSeek"
 }

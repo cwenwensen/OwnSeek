@@ -16,5 +16,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "DeepSeekChat"
+rootProject.name = "OwnSeek"
 include(":app")

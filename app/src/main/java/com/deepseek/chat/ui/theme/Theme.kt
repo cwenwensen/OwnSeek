@@ -47,7 +47,7 @@ private val DarkColorScheme = darkColorScheme(
 )
 
 @Composable
-fun DeepSeekChatTheme(
+fun OwnSeekTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     content: @Composable () -> Unit
 ) {
