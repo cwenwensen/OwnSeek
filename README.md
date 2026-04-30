@@ -1,6 +1,6 @@
 # OwnSeek
 
-非官方第三方 Android 客户端，自带 API Key 即可使用 DeepSeek API。Kotlin + Jetpack Compose 原生构建。
+轻量化非官方第三方 Android 客户端，自备 API Key 即可直接调用 DeepSeek V4 Pro。Kotlin + Jetpack Compose 原生构建。
 
 > **声明：** 本项目与 DeepSeek（深度求索）公司无关，仅为第三方社区客户端。使用前请自行获取 [DeepSeek API Key](https://platform.deepseek.com/)。
 
