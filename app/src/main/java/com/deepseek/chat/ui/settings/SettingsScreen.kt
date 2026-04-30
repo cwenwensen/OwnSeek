@@ -79,7 +79,8 @@ fun SettingsScreen(
                 onSeedChange = { viewModel.updateSeed(it) },
                 onThinkingModeChange = { viewModel.updateThinkingMode(it) },
                 onStreamChange = { viewModel.updateStream(it) },
-                onResponseFormatChange = { viewModel.updateResponseFormat(it) }
+                onResponseFormatChange = { viewModel.updateResponseFormat(it) },
+                onForbidTrainingChange = { viewModel.updateForbidTraining(it) }
             )
         }
     }
@@ -98,7 +99,8 @@ private fun SettingsContent(
     onSeedChange: (String) -> Unit,
     onThinkingModeChange: (ThinkingMode) -> Unit,
     onStreamChange: (Boolean) -> Unit,
-    onResponseFormatChange: (ResponseFormatType) -> Unit
+    onResponseFormatChange: (ResponseFormatType) -> Unit,
+    onForbidTrainingChange: (Boolean) -> Unit
 ) {
     Column(
         modifier = modifier
@@ -211,6 +213,18 @@ private fun SettingsContent(
             options = ResponseFormatType.entries.map { it.displayName to it },
             selectedValue = state.responseFormat,
             onOptionSelected = onResponseFormatChange
+        )
+
+        Spacer(modifier = Modifier.height(12.dp))
+
+        // ====== 隐私 ======
+        SectionHeader("隐私")
+
+        ToggleSetting(
+            label = "禁止用于训练",
+            description = "开启后告知 DeepSeek 不要将你的对话数据用于模型训练",
+            checked = state.forbidTraining,
+            onCheckedChange = onForbidTrainingChange
         )
 
         // 底部留白

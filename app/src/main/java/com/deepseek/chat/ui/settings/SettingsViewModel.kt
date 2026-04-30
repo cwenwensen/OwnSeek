@@ -72,6 +72,10 @@ class SettingsViewModel : ViewModel() {
         viewModelScope.launch { dataStore.setResponseFormat(format) }
     }
 
+    fun updateForbidTraining(value: Boolean) {
+        viewModelScope.launch { dataStore.setForbidTraining(value) }
+    }
+
     fun resetDefaults() {
         viewModelScope.launch { dataStore.resetAll() }
     }

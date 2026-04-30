@@ -14,5 +14,6 @@ data class ChatSettings(
     val frequencyPenalty: Float = 0.0f,
     val seed: Int? = null,
     val stream: Boolean = true,
-    val responseFormat: ResponseFormatType = ResponseFormatType.TEXT
+    val responseFormat: ResponseFormatType = ResponseFormatType.TEXT,
+    val forbidTraining: Boolean = true
 )

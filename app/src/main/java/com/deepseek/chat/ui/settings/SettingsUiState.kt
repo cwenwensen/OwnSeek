@@ -24,7 +24,8 @@ data class SettingsUiState(
     val seedText: String = "",
     val seedError: String? = null,
     val stream: Boolean = true,
-    val responseFormat: ResponseFormatType = ResponseFormatType.TEXT
+    val responseFormat: ResponseFormatType = ResponseFormatType.TEXT,
+    val forbidTraining: Boolean = true
 )
 
 /** 从领域模型构建初始 UI 状态 */
@@ -39,5 +40,6 @@ fun ChatSettings.toUiState(apiKey: String): SettingsUiState = SettingsUiState(
     frequencyPenalty = frequencyPenalty,
     seedText = seed?.toString() ?: "",
     stream = stream,
-    responseFormat = responseFormat
+    responseFormat = responseFormat,
+    forbidTraining = forbidTraining
 )

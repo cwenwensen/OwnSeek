@@ -42,7 +42,8 @@ class SettingsDataStore(private val context: Context) {
             stream = prefs[KEY_STREAM] ?: true,
             responseFormat = ResponseFormatType.fromApiValue(
                 prefs[KEY_RESPONSE_FORMAT] ?: ResponseFormatType.TEXT.apiValue
-            )
+            ),
+            forbidTraining = prefs[KEY_FORBID_TRAINING] ?: true
         )
     }
 
@@ -112,6 +113,12 @@ class SettingsDataStore(private val context: Context) {
         }
     }
 
+    suspend fun setForbidTraining(value: Boolean) {
+        context.dataStore.edit { prefs ->
+            prefs[KEY_FORBID_TRAINING] = value
+        }
+    }
+
     /** 一键恢复所有设置为默认值 */
     suspend fun resetAll() {
         context.dataStore.edit { it.clear() }
@@ -131,5 +138,6 @@ class SettingsDataStore(private val context: Context) {
         private val KEY_SEED = intPreferencesKey("seed")
         private val KEY_STREAM = booleanPreferencesKey("stream")
         private val KEY_RESPONSE_FORMAT = stringPreferencesKey("response_format")
+        private val KEY_FORBID_TRAINING = booleanPreferencesKey("forbid_training")
     }
 }

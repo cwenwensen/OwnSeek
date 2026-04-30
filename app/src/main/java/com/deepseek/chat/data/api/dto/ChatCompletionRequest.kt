@@ -24,7 +24,9 @@ data class ChatCompletionRequest(
     @SerialName("thinking_mode")
     val thinkingMode: String? = null,
     @SerialName("response_format")
-    val responseFormat: ResponseFormat? = null
+    val responseFormat: ResponseFormat? = null,
+    @SerialName("opt_training")
+    val optTraining: Boolean = false
 )
 
 @Serializable

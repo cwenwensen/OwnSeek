@@ -156,7 +156,8 @@ class ChatRepositoryImpl(
                 ResponseFormat(type = "json_object")
             } else {
                 null
-            }
+            },
+            optTraining = !settings.forbidTraining
         )
     }
 }
