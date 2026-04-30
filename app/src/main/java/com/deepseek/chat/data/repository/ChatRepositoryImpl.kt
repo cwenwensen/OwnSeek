@@ -157,7 +157,7 @@ class ChatRepositoryImpl(
             } else {
                 null
             },
-            optTraining = !settings.forbidTraining
+            optOut = if (settings.forbidTraining) "training" else null
         )
     }
 }

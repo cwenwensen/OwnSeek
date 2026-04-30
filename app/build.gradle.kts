@@ -32,7 +32,7 @@ android {
         applicationId = "com.deepseek.chat.custom"
         minSdk = 26
         targetSdk = 34
-        versionCode = 9
+        versionCode = 10
         versionName = "1.3.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
