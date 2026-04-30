@@ -1,7 +1,20 @@
 # Retrofit / OkHttp
--keepattributes Signature
+-keepattributes Signature, InnerClasses, EnclosingMethod
+-keepattributes RuntimeVisibleAnnotations, RuntimeVisibleParameterAnnotations
 -keepattributes *Annotation*
 -keep class com.deepseek.chat.data.api.dto.** { *; }
+
+# OkHttp
+-dontwarn okhttp3.**
+-dontwarn okio.**
+-keep class okhttp3.** { *; }
+-keep interface okhttp3.** { *; }
+
+# DataStore
+-keep class androidx.datastore.** { *; }
+
+# Compose
+-keep class androidx.compose.** { *; }
 
 # kotlinx.serialization
 -keepattributes *Annotation*, InnerClasses
