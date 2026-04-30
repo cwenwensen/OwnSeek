@@ -13,6 +13,7 @@
 - **思考模式 (Thinking)** — 支持 DeepSeek V4 Pro 的思考链推理
 - **响应格式切换** — 支持 Markdown / JSON 两种输出格式
 - **可调参数** — Temperature、Top-P、Max Tokens 等参数实时可调
+- **Token 消耗统计** — 每次 AI 回复后显示输入/输出/总计 Token 用量栏，消息气泡显示单条消息的 Token 数，侧边栏显示每个会话的累计 Token 总数
 - **暗色主题** — 开箱即用的 Material3 深色主题
 - **纯本地存储** — 所有数据存储在设备本地，不上传任何第三方服务器
 
