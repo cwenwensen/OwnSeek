@@ -3,6 +3,7 @@
 -keepattributes RuntimeVisibleAnnotations, RuntimeVisibleParameterAnnotations
 -keepattributes *Annotation*
 -keep class com.deepseek.chat.data.api.dto.** { *; }
+-keep interface com.deepseek.chat.data.api.DeepSeekApiService { *; }
 
 # OkHttp
 -dontwarn okhttp3.**
